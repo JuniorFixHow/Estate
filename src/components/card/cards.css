@@ -1,0 +1,60 @@
+.cards{
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+.cards .container{
+    margin: 2rem 1rem;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .image__container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.cards img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+.cards h4{
+    color:green
+}
+.cards .city{
+    color:rgb(31, 29, 29);
+}
+.cards h5{
+    color:lightgray;
+}
+.cards .card__bot{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+
+}
+
+.cards .cbleft{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.4rem;
+}
+.cards .button{
+    background-color:teal;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: antiquewhite;
+    font-weight: bolder;
+}

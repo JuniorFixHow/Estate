@@ -1,0 +1,42 @@
+.slider{
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5rem 0;
+    background-image: url("https://sustainablehouseday.com/wp-content/uploads/2020/07/harmony-house-passive-solar-livingroom1-YH.jpg");
+}
+
+.slider img{
+    height: 20rem;
+    width: 45rem;
+    border-radius: 3rem;
+}
+
+.slider .icon{
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider .icon:hover{
+    color:antiquewhite;
+}
+.slider h3{
+    position:absolute;
+    text-align: center;
+    overflow:hidden;
+    color:aliceblue;
+}
+
+.slider .current__slide{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}

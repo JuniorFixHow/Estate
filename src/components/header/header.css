@@ -1,0 +1,67 @@
+.header{
+    width: 100%;
+    background-color: rgb(12, 0, 84);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.header .left, .header .hright{
+    margin: 0 1rem;
+}
+
+.header .hright{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.header .account{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    height: 2.5rem;
+    /* padding: 0 1rem; */
+    border-radius: 0.5rem;
+}
+.header .login{
+    /* margin-right: 0.8rem; */
+    background-color:antiquewhite;
+    height: 2.5rem;
+    padding: 0 1.4rem;
+    align-items: center;
+    display: flex;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color:rgb(25, 3, 52);
+
+    
+}
+.header .signup{
+    /* margin-left: 0.8rem; */
+    background-color: white;
+    height: 2.5rem;
+    padding: 0 1rem;
+    align-items: center;
+    display: flex;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color:rgb(133, 52, 233)  
+}
+.header .left{
+    color:white;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.header .user{
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+}
