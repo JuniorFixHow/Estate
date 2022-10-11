@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
     gap: 2rem;
 }
 
@@ -25,8 +26,9 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 0 1rem;
-    flex:1;
+    margin: 0 3rem;
+    width: 23rem;
+    /* flex:1; */
 }
 
 .check .image__container{
@@ -37,18 +39,17 @@
     background-color: white;
     border-radius: 2rem;
     margin-top: 1rem;
+    padding: 1rem 1rem;
    
 }
 
 .check .image__container img{
-    height: 100%;
-    width: 90%;
+    height: 20rem;
+    width: 20rem;
     border-radius: 2rem;
+    /* object-fit: cover; */
 }
-.check .right{
-    display: flex;
-    flex:1;
-}
+
 
 .check .other__details, .check.desc{
     margin-left: 1rem;
@@ -73,10 +74,12 @@
 .check .right{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    flex-wrap: wrap;
+    width: 30rem;
+    max-width: 30rem;
     margin: 1rem 1rem;
     background-color: rgb(80, 80, 121);
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     height: 100%;
     border-radius:1rem;
@@ -138,7 +141,7 @@
    font-style: italic;
    font-size: 1rem;
 }
-.check .message__body .message__content::placeholder{
+.check .message__body textarea::placeholder{
    font-style: italic;
    font-size: 1rem;
 }
@@ -158,4 +161,92 @@
 .check .message__body button:hover{
     padding: 0.7rem 1.3rem;
     color:white;
+}
+
+.check .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.check .phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: teal;
+    font-size: 2rem;
+    height: 2rem;
+    gap: 0.5rem;
+}
+.check h6{
+    color:white
+}
+
+.check .icons{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    height: 2rem;
+    gap:1.5rem;
+    text-decoration: none;
+}
+.check a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.check .phone .call{
+cursor: pointer;
+color: teal;
+}
+.check .icons .what{
+    color:#25D366;
+}
+.check .icons .twit{
+    color:#1DA1F2;
+}
+.check .icons .face{
+    color:#4267B2;
+}
+
+.check .down{
+    display: flex;
+    background:whitesmoke;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+}
+.check .down .images{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.check .down .images img{
+    height: 10rem;
+    width: 10rem;
+    border-radius:0.5rem;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.check .down .images .one_image{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.check .down .images img:hover{
+    height: 12rem;
+    width: 12rem;
+}
+.check .down .big img{
+    height: 40rem;
+    width: 45rem;
+    border-radius:0.5rem;
+    margin: 1rem;
 }

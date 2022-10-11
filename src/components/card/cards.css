@@ -16,6 +16,8 @@
     border-bottom-right-radius: 3rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 23rem;
 }
 
 .cards .image__container{

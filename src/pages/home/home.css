@@ -5,3 +5,49 @@
     height: fit-content;
     background-color:gainsboro;
 }
+
+.home .search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.home .search .searchcontainer{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:relative;
+    width: fit-content;
+}
+
+.home .search input{
+    width: 20rem;
+    border:none;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 3rem;
+    position: absolute;
+}
+.home .search .searchicon{
+    width: 3rem;
+    border:none;
+    background:rgb(29, 46, 117);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 0;
+    position:absolute;
+    right: -11.5rem;
+    cursor: pointer;
+}
+.home .search .searchicon .icon{
+    font-size: 1.2rem;
+    font-weight:bolder;
+    color:aliceblue;
+}
