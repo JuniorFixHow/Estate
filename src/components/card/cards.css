@@ -1,6 +1,6 @@
 .cards{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
@@ -9,6 +9,7 @@
 
 .cards .container{
     margin: 2rem 1rem;
+    /* margin-left: 1rem; */
     background-color:white;
     align-items: center;
     justify-content: center;
@@ -18,6 +19,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 23rem;
+    height:33rem;
 }
 
 .cards .image__container{
@@ -59,4 +61,37 @@
     border-radius: 0.5rem;
     color: antiquewhite;
     font-weight: bolder;
+}
+
+@media screen and (max-width:1100px ){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards .container{
+        width: 20rem;
+        height:30rem;
+    }
+
+    .cards img{
+        height: 18rem;
+        width: 18rem;
+        border-radius: 2rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .cards .container{
+        width: 20rem;
+        height:30rem;
+    }
+
+    .cards img{
+        height: 18rem;
+        width: 18rem;
+        border-radius: 2rem;
+    }
 }

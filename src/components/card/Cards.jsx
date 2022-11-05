@@ -4,18 +4,26 @@ import {Estates} from "../dummy/imageData";
 import { useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-const Cards = () => {
+const Cards = ({search, setSearch}) => {
+    // const [search, setSearch] = useState([]);
     const [myestates, setMyEstates] = useState([]);
+    const [photo, setPhoto] = useState([]);
     const fetchData = ()=>fetch('/estates').then(res=>res.json());
     useEffect(()=>{
         fetchData().then(data=>{
             setMyEstates(data);
         })
-    },[])
-    console.log(myestates);
+    },[]);
+
+    //result =  myestates.filter(item=>item.photos.length>0).map(item=>item.photos);
+    
+    //console.log(photo);
     return (
         <div className='cards'>
-            {myestates.map(estate=>(
+            {myestates.filter((item)=>{
+                return search.toLowerCase() === '' ? item : 
+                item.name.toLowerCase().includes(search) || item.city.toLowerCase().includes(search)
+            }).map(estate=>(
                 <div className="container" key={estate._id}>
                     <h2>{estate.name}</h2>
                     <div className="image__container">

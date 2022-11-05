@@ -13,13 +13,30 @@
 .slider img{
     height: 20rem;
     width: 45rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
+    transition:2s;
+    cursor: pointer;
+    /* transition: all 400ms ease; */
+}
+.slider:hover .icon {
+    opacity: 1;
 }
 
 .slider .icon{
-    font-size: 4rem;
+    font-size: 2rem;
     cursor: pointer;
+    font-weight: bolder;
     z-index: 10;
+    background-color: black;
+    color: aliceblue;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.slider .icon:hover{
+    font-size: 2.3rem;  
+    background-color:lightseagreen;
+    color:antiquewhite;
+    opacity: 1;
 }
 
 .slider .icon:hover{
@@ -32,11 +49,34 @@
     color:aliceblue;
 }
 
+.slider .slide__active{
+    /* transition: 2s; */
+    display: flex;
+    transition: 40s ease;
+}
+.slider .slide{
+    transition: 40s ease;
+    display: flex;
+}
 .slider .current__slide{
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    transition: 40s ease;
+}
+
+@media screen and (max-width:1024px){
+    .slider img{
+        height: 18rem;
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .slider img{
+        height: 15rem;
+        width: 20rem;
+    }
 }

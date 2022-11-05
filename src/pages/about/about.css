@@ -1,0 +1,196 @@
+.about{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .notice{
+    background: white;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    justify-content: space-between;
+    align-items:center;
+}
+.about .notice h1{
+    display:flex;
+    flex:2;
+    margin:1rem 4rem 1rem 1rem;
+    text-align:left;
+    color:rgb(73, 71, 71)
+}
+.about .notice h4{
+    display:flex;
+    flex:1;
+    margin:1rem 4rem;
+    text-align:right;
+    color:darkgrey;
+}
+.about .image__card{
+    background:white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .image__card img{
+    height: 25rem;
+    width: 98%;
+}
+.about .texts{
+    background:white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .texts h1{
+    margin: 1rem;
+    color:rgb(16, 16, 99);
+}
+.about .texts h4{
+    margin: 1rem;
+    color: rgb(56, 49, 49);
+}
+
+.about .bmanager{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background:white;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about .bmanager h1{
+    color:rgb(16, 16, 99);
+}
+
+.about .manager{
+    background:rgb(0, 53, 69);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    height:23rem;
+}
+.about .manager .left{
+    /* background:rgba(214, 209, 209, 0.377); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    position:relative;
+    align-self: end;
+}
+.about .manager .left .green{
+    background: rgb(0, 204, 96);
+    right: 0;
+    bottom:0;
+    width: 20rem;
+    height: 15rem;
+    position:absolute;
+    border-top-left-radius: 100%;
+}
+.about .manager .left .yellow{
+    background: rgb(255, 228, 119);
+    right: 0;
+    bottom:0;
+    width: 8rem;
+    height: 20rem;
+    position:absolute;
+}
+.about .manager img{
+    background:white;
+    width: 16rem;
+    height: 18rem;
+    bottom:2rem;
+    right:7rem;
+    position:absolute;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+.about .manager .right{
+   margin-left: 3rem;
+}
+.about .manager .right h5{
+   color:lightgray;
+}
+.about .manager .right h2{
+font-size: 2rem;
+color:white;
+}
+.about .manager .right .contact__button{
+    background:white;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.about .manager .right .contact__button:hover{
+    background:turquoise;
+}
+.about .manager .right hr{
+    background-color:gray;
+    color:gray;
+    border-color: gray;
+    border-width: 0.1;
+
+}
+
+@media screen and (max-width:1100px){
+    
+}
+@media screen and (max-width:600px){
+    .about .notice{
+        flex-direction: column;
+    }
+    .about .notice h4{
+        margin: 1rem 2rem;
+        text-align: right;
+    }
+
+    .about .manager{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about .manager .right{
+        align-self: flex-start;
+        margin: 0 0 0 1rem;
+    }
+
+    .about .manager .left .green{
+        width: 10rem;
+        height: 7.5rem;
+    }
+    .about .manager .left .yellow{
+        width: 6rem;
+        height: 9rem;
+       
+    }
+    .about .manager img{
+        width: 7rem;
+        height: 7.07rem;
+        right:5.8rem;
+        border-radius: 0.5rem;
+    }
+
+    .about .manager .right h2{
+        font-size: 1rem;
+    }
+}
